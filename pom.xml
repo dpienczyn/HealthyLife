@@ -11,9 +11,8 @@
         <hibernate.version>4.3.11.Final</hibernate.version>
         <mysql.connector.version>5.1.31</mysql.connector.version>
             <maven.compiler.source>3.3.9</maven.compiler.source>
-    <maven.compiler.target>3.3.9</maven.compiler.target>
+    <maven.compiler.target>3.3</maven.compiler.target>
     </properties>
- 
     <dependencies>
         <!-- Spring -->
         <dependency>
@@ -137,7 +136,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.3.9</version>
+                    <version>3.3</version>
                     <configuration>
                         <source>1.7</source>
                         <target>1.7</target>
