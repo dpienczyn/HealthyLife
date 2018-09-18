@@ -10,8 +10,8 @@
         <springsecurity.version>4.0.4.RELEASE</springsecurity.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
         <mysql.connector.version>5.1.31</mysql.connector.version>
-            <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+            <maven.compiler.source>3.3.9</maven.compiler.source>
+    <maven.compiler.target>3.3.9</maven.compiler.target>
     </properties>
  
     <dependencies>
@@ -137,7 +137,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>1.8</version>             <executions>
+                    <version>3.3.9</version>             <executions>
               <execution>
                   <phase>package</phase>
                   <goals><goal>copy</goal></goals>
