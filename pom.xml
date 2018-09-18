@@ -106,11 +106,12 @@
             <artifactId>hsqldb</artifactId>
             <version>2.2.8</version>
         </dependency>
-        <dependency>
-            <groupId>postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>9.1-901-1.jdbc4</version>
+    <dependency>
+    <groupId>com.heroku.sdk</groupId>
+    <artifactId>heroku-jdbc</artifactId>
+    <version>0.1.1</version>
 </dependency>
+
  
         <!-- Servlet+JSP+JSTL -->
         <dependency>
