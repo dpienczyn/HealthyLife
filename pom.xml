@@ -12,6 +12,8 @@
         <mysql.connector.version>5.1.31</mysql.connector.version>
             <maven.compiler.source>3.3.9</maven.compiler.source>
     <maven.compiler.target>3.3</maven.compiler.target>
+    <org.springframework.version>3.1.1.RELEASE</org.springframework.version>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
         <!-- Spring -->
@@ -93,10 +95,21 @@
         </dependency>
 
         <dependency>
-  <groupId>com.github.jsimone</groupId>
-  <artifactId>webapp-runner</artifactId>
-  <version>8.5.11.3</version>
-  <scope>provided</scope>
+            <groupId>com.github.jsimone</groupId>
+            <artifactId>webapp-runner</artifactId>
+            <version>7.0.34.0</version>
+            <scope>provided</scope>
+</dependency>
+
+<dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.2.8</version>
+        </dependency>
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901-1.jdbc4</version>
 </dependency>
  
         <!-- Servlet+JSP+JSTL -->
@@ -152,6 +165,29 @@
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
                 </plugin>
+                <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.github.jsimone</groupId>
+                                    <artifactId>webapp-runner</artifactId>
+                                    <version>7.0.34.0</version>
+                                    <destFileName>webapp-runner.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+</plugin>
             </plugins>
         </pluginManagement>
         <finalName>aplikacja</finalName>
