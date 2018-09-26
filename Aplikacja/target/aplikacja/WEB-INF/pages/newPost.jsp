@@ -15,7 +15,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="<c:url value="/resources/js/main.js" />"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css"/>" />
-<link rel="stylesheet" href="<c:url value="/resources/css/post.css"/>" />
+<link rel="stylesheet" href="<c:url value="/resources/css/newPost.css"/>" />
 <!------ Include the above in your HEAD tag ---------->
 <title>Nowy Post</title>
 </head>

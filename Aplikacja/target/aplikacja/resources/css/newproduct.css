@@ -15,7 +15,8 @@ margin-right: 320px;
 .btn{
 margin-left: 320px;
 margin-right: 320px;
-	width: 500px;	
+	width: 500px;
+	text-transform: uppercase;	
 }
 section{
 padding: 40px 0;

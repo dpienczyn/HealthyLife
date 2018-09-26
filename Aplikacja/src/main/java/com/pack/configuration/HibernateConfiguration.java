@@ -1,5 +1,7 @@
 package com.pack.configuration;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -18,7 +20,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
- 
+import org.apache.commons.dbcp.BasicDataSource;
+
 @Configuration
 @EnableTransactionManagement
 @ComponentScan({ "com.pack.configuration" })
@@ -47,7 +50,7 @@ public class HibernateConfiguration {
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource());
+        //sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan(new String[] { "com.pack.model" });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
