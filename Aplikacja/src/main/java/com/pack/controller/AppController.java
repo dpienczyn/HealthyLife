@@ -31,7 +31,7 @@ import com.pack.service.UserService;
  
  
 @Controller
-//@RequestMapping("/")
+@RequestMapping("/")
 @SessionAttributes("roles")
 public class AppController {
  
