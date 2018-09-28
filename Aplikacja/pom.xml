@@ -183,7 +183,7 @@
                     </configuration>
                 </execution>
             </executions>
-</plugin>
+            </plugin>
             </plugins>
         </pluginManagement>
         <finalName>Aplikacja</finalName>
