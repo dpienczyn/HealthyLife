@@ -19,6 +19,7 @@ public class BMRController {
         model.setViewName("bmr");
         return model;
     }
+
 	
 	@RequestMapping(value="bmr/resultBMR",  method = RequestMethod.POST)
     public ModelAndView calculateBMR(@ModelAttribute("resultBMR") BMR b){
