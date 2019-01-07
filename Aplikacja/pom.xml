@@ -144,6 +144,11 @@
         	<artifactId>junit</artifactId>
         	<version>4.12</version>
         </dependency>
+        <dependency>
+      <groupId>postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.0-801.jdbc4</version>
+    </dependency>
     </dependencies>
  
     <build>
