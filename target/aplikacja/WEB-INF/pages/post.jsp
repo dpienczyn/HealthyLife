@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -15,6 +14,7 @@
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css"/>" />
 <link rel="stylesheet" href="<c:url value="/resources/css/post.css"/>" />
 <!------ Include the above in your HEAD tag ---------->
+<title>New/Edit Product</title>
 </head>
 <link href="http://fonts.googleapis.com/css?family=Arimo:400" rel="stylesheet">
 <body>
@@ -177,9 +177,11 @@
     
     
     <div>
+    
 <span class="badge">${post.autor }</span><div class="pull-right"><span class="label label-default">alice</span> <span class="label label-primary">story</span> <span class="label label-success">blog</span> <span class="label label-info">personal</span> <span class="label label-warning">Warning</span>
 <span class="label label-danger">Danger</span></div>         
      </div>
+    
     <hr>
     </div>
     </div>

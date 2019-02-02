@@ -18,7 +18,6 @@
 </head>
 <link href="http://fonts.googleapis.com/css?family=Arimo:400" rel="stylesheet">
 <body>
-
 <!------ Panel menu ---------->
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -173,8 +172,8 @@
 <div class="container">
 <div class="col-md-12">
     <h1>${post.tytul }</h1>
-    
-    
+    <img src="${post.image}" width="100" height="100"/>
+<td><img src="<c:url value="/resources/images/1.jpg"/>" alt="image" class="image"/></td>
     <div>
 <span class="badge">${post.autor }</span><div class="pull-right"><span class="label label-default">alice</span> <span class="label label-primary">story</span> <span class="label label-success">blog</span> <span class="label label-info">personal</span> <span class="label label-warning">Warning</span>
 <span class="label label-danger">Danger</span></div>         
@@ -185,7 +184,7 @@
     </c:forEach>
     
     <div align="center">
-        <form:form action="saveComment" modelAttribute="comment" method="post">     
+        <form:form action="saveComment" modelAttribute="comment" method="post"  enctype="multipart/form-data">     
 <form:hidden path="idComment" />
 <div class="col-xs-4">
     <label for="ex3"></label>

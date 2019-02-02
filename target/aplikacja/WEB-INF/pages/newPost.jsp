@@ -168,7 +168,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
 <section>
 <div class="container">
 <div class="row">
@@ -203,7 +202,11 @@
   </div>
   </div>
   </div>
-  Please select a file to upload : <input type="file" name="image" />
+  <tr>
+               <td>Upload Image</td>
+               <td><form:input type="file" path="image"/></td>
+               <td> </td>
+           </tr>
 <button type="submit" value="Save" class="btn btn-primary active">Oblicz</button>
         </form:form>
     </div>
