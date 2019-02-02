@@ -1,24 +1,26 @@
-.col-xs-4{
-	margin-left: 350px;
-	
-}
-.btn{
+.col-xs-4 {
 	margin-left: 350px;
 }
-p{
+
+.btn {
+	margin-left: 350px;
+}
+
+p {
 	font-size: 30px;
 	margin-top: 5px;
 }
-body{
+
+body {
 	font-family: "sans serif";
 }
-.badge{
+
+.badge {
 	text-transform: uppercase;
 }
 
 @media only screen and (max-width: 600px) {
-.btn{
-	margin-left: 30px;
-}	
-	
+	.btn {
+		margin-left: 30px;
+	}
 }

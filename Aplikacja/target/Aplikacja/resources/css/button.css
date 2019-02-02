@@ -1,58 +1,67 @@
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
+
 .btn {
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1.2px;
-  padding: 12px 32px;
-  text-align: center;
-  text-transform: uppercase;
-  overflow: hidden;
-  z-index: 1;
-  cursor: pointer;
+	position: relative;
+	display: inline-block;
+	letter-spacing: 1.2px;
+	padding: 12px 32px;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
+	z-index: 1;
+	cursor: pointer;
 }
+
 .btn:focus {
-  outline: none;
+	outline: none;
 }
+
 .btn--primary {
-  color: darkturquoise;
+	color: darkturquoise;
 }
+
 .btn--border {
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 10px;
-  box-sizing: border-box;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	box-sizing: border-box;
 }
+
 .btn--animated {
-  transition-property: color;
-  transition-duration: 0.5s;
+	transition-property: color;
+	transition-duration: 0.5s;
 }
+
 .btn--animated.btn--border.btn--primary {
-  border: 1px solid ghostwhite;
+	border: 1px solid ghostwhite;
 }
+
 .btn--animated:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: ghostwhite;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  z-index: -1;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: ghostwhite;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition-property: transform;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	z-index: -1;
 }
+
 .btn--animated:hover {
-  color: white;
+	color: white;
 }
+
 .btn--animated:hover:before {
-  transform: scaleX(1);
-  transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+	transform: scaleX(1);
+	transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
 }

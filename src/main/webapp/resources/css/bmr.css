@@ -1,45 +1,60 @@
-body{
+body {
 	font-family: "sans serif";
 }
-form-control{
+
+form-control {
 	margin-right: auto;
 	margin-left: auto;
 }
-.btn-primary{
+
+.btn-primary {
 	margin-left: 430px;
 	width: 40.5%;
 }
-.form-control{
-	margin-left: 430px;
-}
-.radio-inline{
+
+.form-control {
 	margin-left: 430px;
 }
 
-section{
-padding: 40px 0;
-background: #fff; 
-font-family: "sans serif";
-text-transform: uppercase;
+.radio-inline {
+	margin-left: 430px;
 }
+
+section {
+	padding: 40px 0;
+	background: #fff;
+	font-family: "sans serif";
+	text-transform: uppercase;
+}
+
 .divider {
-width: 100%;
-margin: 20px auto 15px;
-position: relative;
-height: 1px;
--webkit-backface-visibility: hidden;
--webkit-transform: translateZ(0) scale(1, 1); }
+	width: 100%;
+	margin: 20px auto 15px;
+	position: relative;
+	height: 1px;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0) scale(1, 1);
+}
+
 .divider::after {
-height: 1px;
-background: #e8e8e8;
-background: -moz-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
-background: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(35%, rgba(0, 0, 0, 0.09)), color-stop(70%, rgba(0, 0, 0, 0.09)), color-stop(100%, transparent));
-background: -webkit-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
-background: -o-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
-background: -ms-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
-background: linear-gradient(to right, transparent 0, rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
-position: absolute;
-bottom: -1px;
-content: "";
-width: 100%;
-left: 0; }
+	height: 1px;
+	background: #e8e8e8;
+	background: -moz-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.09)
+		35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0, transparent),
+		color-stop(35%, rgba(0, 0, 0, 0.09)),
+		color-stop(70%, rgba(0, 0, 0, 0.09)), color-stop(100%, transparent));
+	background: -webkit-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.09)
+		35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
+	background: -o-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.09)
+		35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
+	background: -ms-linear-gradient(left, transparent 0, rgba(0, 0, 0, 0.09)
+		35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
+	background: linear-gradient(to right, transparent 0, rgba(0, 0, 0, 0.09)
+		35%, rgba(0, 0, 0, 0.09) 70%, transparent 100%);
+	position: absolute;
+	bottom: -1px;
+	content: "";
+	width: 100%;
+	left: 0;
+}
