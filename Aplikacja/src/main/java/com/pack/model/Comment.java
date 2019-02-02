@@ -68,5 +68,4 @@ public class Comment implements Serializable{
 	public void setPost(Post post) {
 		this.post = post;
 	}
-	
 }
