@@ -240,11 +240,6 @@
 				</div>
 			</div>
 	</div>
-	<tr>
-		<td>Upload Image</td>
-		<td><form:input type="file" path="image" /></td>
-		<td></td>
-	</tr>
 	<button type="submit" value="Save" class="btn btn-primary active">Oblicz</button>
 	</form:form>
 	</div>
