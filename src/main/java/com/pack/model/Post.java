@@ -45,22 +45,6 @@ public class Post implements Serializable{
 	
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "post")
 	   private List<Comment> comments= new ArrayList<>();
-	
-	  
-	  @Lob 
-	  @Basic(fetch=FetchType.LAZY)
-	  @Column(nullable=false, columnDefinition="blob")
-	  private byte[] image;
-
-
-	public byte[] getImage() {
-		return image;
-	}
-
-
-	public void setImage(byte[] image) {
-		this.image = image;
-	}
 
 
 	public String getAutor() {
