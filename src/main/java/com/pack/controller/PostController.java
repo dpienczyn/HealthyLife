@@ -43,7 +43,6 @@ import com.pack.service.CommentService;
 import com.pack.service.PostService;
 import com.pack.service.UserService;
 
-@RequestMapping(value="/posts")
 @Controller
 public class PostController {
 	
@@ -59,7 +58,7 @@ public class PostController {
 	@Autowired
 	private CommentService commentService;
 	
-	@RequestMapping(value = " ")
+	@RequestMapping(value = "/")
     public ModelAndView listPost(ModelAndView model) throws IOException {
         List<Post> listPost = postService.getAllPost();
         model.addObject("listPost", listPost);
