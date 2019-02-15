@@ -6,7 +6,6 @@
   <packaging>war</packaging>
   <url>http://maven.apache.org</url>
     <properties>
-<project-name>${project.name}</project-name>
         <springframework.version>4.2.5.RELEASE</springframework.version>
         <springsecurity.version>4.0.4.RELEASE</springsecurity.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
@@ -75,11 +74,11 @@
             <version>1.1.0.Final</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/log4j/log4j -->
-<dependency>
+<!-- <dependency>
     <groupId>log4j</groupId>
     <artifactId>log4j</artifactId>
     <version>1.2.17</version>
-</dependency>
+</dependency> -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -154,7 +153,7 @@
     </dependencies>
 
 <build>
-    <finalName>${project-name}</finalName>
+    <finalName>Aplikacja</finalName>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -169,8 +168,8 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.5.1</version>
             <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
+                <source>1.7</source>
+                <target>1.7</target>
                 <encoding>UTF-8</encoding>
             </configuration>
         </plugin>

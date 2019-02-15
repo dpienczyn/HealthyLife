@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%
+    response.setCharacterEncoding("UTF-8");
+    request.setCharacterEncoding("UTF-8");
+%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -14,8 +18,11 @@
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="<c:url value="/resources/js/main.js" />"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css"/>" />
 <link rel="stylesheet" href="<c:url value="/resources/css/post.css"/>" />
+<link rel="stylesheet" href="<c:url value="/resources/css/blog.css"/>" />
 <!------ Include the above in your HEAD tag ---------->
 <title>New/Edit Product</title>
 </head>
@@ -203,33 +210,37 @@
 	<!-- /.container-fluid --> </nav>
 
 
-	<c:forEach var="post" items="${listPost}">
-		<a href="${pageContext.request.contextPath}/posts/${post.postid}">Click
-			Here</a>
-		<div class="container">
-			<div class="col-md-12">
-				<h1>${post.tytul }</h1>
+<div class="blog">
+      <div class="container">
+           
+            <div class="row">
+                 <div class="col-lg-6 col-lg-offset-3 text-center">  
+                    <h2><span class="ion-minus"></span>Blog Posts<span class="ion-minus"></span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br>
+                 </div> 
+            </div>  
+               
+           <div class="row">
+           <c:forEach var="post" items="${listPost}">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-right">
+					 <div class="card text-center">
+                        <img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+                        <div class="card-block">
+                        
+                            <h4 class="card-title">${post.tytul }</h4>
+                            <p class="card-text">${post.autor }</p>
+                            <a class="btn btn-default" href="${pageContext.request.contextPath}/posts/${post.postid}">Read More</a>
+                     
+                        </div>
+                     </div>
+                </div>
+                </c:forEach>
+				
+            </div>
+            
+    </div>
+</div>
 
-
-				<div>
-
-					<span class="badge">${post.autor }</span>
-					<div class="pull-right">
-						<span class="label label-default">alice</span> <span
-							class="label label-primary">story</span> <span
-							class="label label-success">blog</span> <span
-							class="label label-info">personal</span> <span
-							class="label label-warning">Warning</span> <span
-							class="label label-danger">Danger</span>
-					</div>
-				</div>
-
-				<hr>
-			</div>
-		</div>
-	</c:forEach>
-	</div>
-	</div>
 
 	<c:forEach var="post" items="${comment}">
 
