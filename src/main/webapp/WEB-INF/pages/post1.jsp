@@ -247,8 +247,6 @@
 		<div class="container">
 			<div class="col-md-12">
 				<h1>${post.autor }</h1>
-
-
 				<div>
 					<span class="badge">${post.opis }</span>
 					<div class="pull-right">

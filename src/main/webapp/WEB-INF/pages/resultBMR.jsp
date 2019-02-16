@@ -1,4 +1,4 @@
-<jsp:include page="menu.jsp" />
+
 
 <section>
 	<div class="container">

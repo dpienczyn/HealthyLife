@@ -59,17 +59,17 @@
                 <nav class="site-navigation text-right" role="navigation">
                   <div class="container">
                     
-                    <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+                   <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li class="">
-                        <a href="index.html">Home</a>
+                        <a href="http://healthylifee.herokuapp.com/">Home</a>
                       </li>
-                      <li class="has-children">
+                     <li class="has-children">
                         <a href="classes.html">Kalkulator</a>
                         <ul class="dropdown arrow-top">
-                          <li><a href="classes.html">BMI</a></li>
-                          <li><a href="classes.html">Kalorie</a></li>
-                          <li><a href="classes.html">BMR</a></li>
+                          <li><a href="http://healthylifee.herokuapp.com/bmi">BMI</a></li>
+                          <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
+                          <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
                           <li class="has-children">
                             <a href="classes.html">Produkty</a>
                             <ul class="dropdown">

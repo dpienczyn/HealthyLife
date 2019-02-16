@@ -24,14 +24,16 @@ public class BmiController {
 		double result;
         ModelAndView mv = new ModelAndView();
         System.out.println("wzrost:" + vbmi.getHeight() + " waga: " + vbmi.getWeight());
-        result = vbmi.getWeight() / (vbmi.getHeight()*vbmi.getHeight());
-        result *=100;
+        double wzrost = vbmi.getHeight()/100;
+        result = vbmi.getWeight() / (wzrost*wzrost);
+        //result /= 100;
+        //result *=100;
         result = Math.round(result);
-        result /= 100;
+        
         if(result<=18){
         	mv.addObject("r", "Niedowaga");
         }else if(result>18&&result<25){
-        	mv.addObject("r", "Waga prawid³owa");
+        	mv.addObject("r", "Waga prawidï¿½owa");
         }else if(result>25&&result<30){
         	mv.addObject("r", "Nadwaga");
         }

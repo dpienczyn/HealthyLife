@@ -20,7 +20,7 @@ import com.pack.service.CommentService;
 import com.pack.service.PostService;
 
 
-@RequestMapping(value="/posts/{postid}/comments")
+@RequestMapping(value="/{postid}/comments")
 @Controller
 public class CommentController {
 	
@@ -67,6 +67,6 @@ public class CommentController {
 		comment.setPost(post);
 		post.addComment(comment);
 		commentService.saveOrUpdate(comment);
-	    return new ModelAndView("redirect:/posts/{postid}/comments");
+	    return new ModelAndView("redirect:/{postid}/comments");
 	}
 }

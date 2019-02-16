@@ -100,8 +100,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h2 class="caption mb-2">Oblicz ile kalorii zawiera produkt</h2>
-              <h1 class="">Kalorie</h1>
+              <h2 class="caption mb-2">Get In Touch</h2>
+              <h1 class="">Contact</h1>
               
             </div>
           </div>
@@ -113,59 +113,24 @@
     <div class="site-section site-section-sm">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-8 mb-5">
-          
-            
-          <form:form method="POST" action="calorie/resultCalorie">
-            <form action="#" class="p-5 bg-white">
-<label class="radio-inline"><input type="radio" value="gram"
-			name="rodzaj">gram</label>
-		<label class="radio-inline"><input type="radio"
-			value="mililitry" name="rodzaj">ml</label>
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="font-weight-bold" for="fullname">Białko</label>
-                  <input type="double" id="fullname" name="bialko" class="form-control" placeholder="Białko">
-                </div>
-              </div>
-               <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Wartość odzywcza białka</label>
-                  <input type="double" id="email"  name="wb" class="form-control" placeholder="Wartość odzywcza białka">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Węglowodany</label>
-                  <input type="double" id="email"  name="weglowodany" class="form-control" placeholder="Węglowodany">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Wartość odzywcza węglowodanów</label>
-                  <input type="double" id="email"  name="ww" class="form-control" placeholder="Wartość odzywcza węglowodanów">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Tłuszcz</label>
-                  <input type="double" id="email"  name="tluszcz" class="form-control" placeholder="Tłuszcz">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Wartość odzywcza tłuszczy</label>
-                  <input type="double" id="email"  name="wt" class="form-control" placeholder="Wartość odzywcza tłuszczy">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Oblicz" class="btn btn-primary pill text-white px-5 py-2">
-                </div>
-              </div>
+       
+      
 
-  
-            </form:form>
+          <div class="col-lg-4">
+            <div class="p-4 mb-3 bg-white">
+              <h3 class="h5 text-black mb-3">Kontakt</h3>
+              <p class="mb-0 font-weight-bold">Adres</p>
+              <p class="mb-4">Nowa 4, Strzelno, Polska</p>
+
+              <p class="mb-0 font-weight-bold">Telefon</p>
+              <p class="mb-4"><a href="#">698-969-709</a></p>
+
+              <p class="mb-0 font-weight-bold">Email Adres</p>
+              <p class="mb-0"><a href="#">donia19881@wp.pl</a></p>
+
+            </div>
+            
+            
           </div>
         </div>
       </div>
@@ -274,7 +239,7 @@
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Dominika Pienczyn</a>
+            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -284,7 +249,7 @@
     </footer>
   </div>
 
-   <script src="resources/js/jquery-3.3.1.min.js"></script>
+  <script src="resources/js/jquery-3.3.1.min.js"></script>
   <script src="resources/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="resources/js/jquery-ui.js"></script>
   <script src="resources/js/popper.min.js"></script>

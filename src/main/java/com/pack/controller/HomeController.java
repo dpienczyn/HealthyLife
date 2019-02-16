@@ -8,9 +8,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-	@RequestMapping(value = { "/ghj"})
+	@RequestMapping(value = { "/kontakt"})
     public String HomePage(ModelAndView model) {
-        return "home";
+        return "kontakt";
     }
 	
 	@RequestMapping(value = { "/home2"})

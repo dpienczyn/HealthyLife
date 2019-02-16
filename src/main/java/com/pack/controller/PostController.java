@@ -89,6 +89,6 @@ public class PostController {
 	@RequestMapping(value = "/savePost", method = RequestMethod.POST)
 	public ModelAndView savePost(@ModelAttribute("post") Post post) {
 	    postService.saveOrUpdate(post);
-	    return new ModelAndView("redirect:/posts");
+	    return new ModelAndView("redirect:/");
 	}
 }
