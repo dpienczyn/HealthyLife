@@ -84,7 +84,7 @@
                       </li>
                       <li><a href="events.html">Events</a></li>
                       <li><a href="about.html">About Studio</a></li>
-                      <li class="active"><a href="contact.html">Contact</a></li>
+                      <li><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                     </ul>
                   </div>
                 </nav>

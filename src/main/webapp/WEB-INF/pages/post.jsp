@@ -82,7 +82,7 @@
                       </li>
                       <li><a href="events.html">Blog</a></li>
                       <li class="active"><a href="about.html">Rejestracja</a></li>
-                      <li><a href="contact.html">Kontakt</a></li>
+                      <li><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                     </ul>
                   </div>
                 </nav>
