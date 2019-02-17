@@ -101,8 +101,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h2 class="caption mb-2">Yoga for everybody</h2>
-              <h1 class="">Welcome To Yogalife</h1>
+              <h2 class="caption mb-2">Przeczytaj artykuł</h2>
+              <h1 class=""><c:forEach var="post" items="${lista}">${post.tytul } </c:forEach></h1>
               
             </div>
           </div>
@@ -113,8 +113,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h2 class="caption mb-2">Enjoy With Us</h2>
-              <h1 class="">Yoga &amp; Meditation</h1>
+              <h2 class="caption mb-2">Cytat</h2>
+              <h1 class="">Człowiek jest tym, co zje...</h1>
             </div>
           </div>
         </div>
@@ -131,24 +131,6 @@
       </div>
     </div>
 </c:forEach>
-    
-   <div align="center">
-		<form:form action="saveComment" modelAttribute="comment" method="post" enctype="multipart/form-data">
-			<form:hidden path="idComment" />
-			<div class="col-xs-4">
-				<label for="ex3"></label> <input class="form-control" name="autor"
-					id="autor" type="string" placeholder="Autor">
-			</div>
-	</div>
-	<div class="form-group row">
-		<div class="col-xs-4">
-			<label for="ex3"></label> <input class="form-control" name="opis"
-				id="opis" type="string" placeholder="Opis">
-		</div>
-	</div>
-	<button type="submit" value="Save" class="btn btn-primary active">Opublikuj</button>
-	</form:form>
-	</div>
 	
     <div class="site-section site-section-sm">
       <div class="container">
@@ -200,159 +182,24 @@
             <h2>Komentarze</h2>
           </div>
         </div>
+<c:forEach var="comment" items="${comments}">
 
-        <div class="nonloop-block-14 owl-carousel">
-          
-          <div class="p-4">
-            <div class="d-flex block-testimony">
-              <div class="person mr-3">
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded">
-              </div>
-              <div>
-                <h2 class="h5">Katie Johnson</h2>
-                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <div class="d-flex block-testimony">
-              <div class="person mr-3">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded">
-              </div>
-              <div>
-                <h2 class="h5">Jane Mars</h2>
-                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <div class="d-flex block-testimony">
-              <div class="person mr-3">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded">
-              </div>
-              <div>
-                <h2 class="h5">Shane Holmes</h2>
-                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
-              </div>
-            </div>
-          </div>
-          <div class="p-4">
-            <div class="d-flex block-testimony">
-              <div class="person mr-3">
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded">
-              </div>
-              <div>
-                <h2 class="h5">Mark Johnson</h2>
-                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
-              </div>
-            </div>
-          </div>
+		<div class="container">
+			<div class="col-md-12">
+				<h1>${comment.autor }</h1>
 
-        </div>
 
+				<div>
+					<span class="badge">${comment.opis }</span>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</c:forEach>
+	
       </div>
       
     </div>
-    
-    
-    
- 
-
-    
-    
-    <div class="site-section">
-      <div class="">
-        <div class="row">
-          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2 class="mb-5">Our Gallery</h2>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_1.jpg" class="image-popup img-opacity"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_2.jpg" class="image-popup img-opacity"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_3.jpg" class="image-popup img-opacity"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_4.jpg" class="image-popup img-opacity"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_4.jpg" class="image-popup img-opacity"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_5.jpg" class="image-popup img-opacity"><img src="images/img_5.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_6.jpg" class="image-popup img-opacity"><img src="images/img_6.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_7.jpg" class="image-popup img-opacity"><img src="images/img_7.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_1.jpg" class="image-popup img-opacity"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_2.jpg" class="image-popup img-opacity"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_3.jpg" class="image-popup img-opacity"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <a href="images/img_4.jpg" class="image-popup img-opacity"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    
-   <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2 class="mb-5">Yoga Features</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="text-center item">
-              <span class="flaticon-001-stone display-3 mb-3 d-block text-primary"></span>
-              <h2 class="h5">Peace of Mind</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="text-center item">
-              <span class="flaticon-002-lotus display-3 mb-3 d-block text-primary"></span>
-              <h2 class="h5">Mindfullness</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="text-center item">
-              <span class="flaticon-003-meditation display-3 mb-3 d-block text-primary"></span>
-              <h2 class="h5">Meditation</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="text-center item">
-              <span class="flaticon-004-carpet display-3 mb-3 d-block text-primary"></span>
-              <h2 class="h5">Yoga Carpet</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-
     
 
 
@@ -493,53 +340,4 @@
     </script>
 
   </body>
-</html>
-
-
-	<div align="center">
-		<form:form action="saveComment" modelAttribute="comment" method="post"
-			enctype="multipart/form-data">
-			<form:hidden path="idComment" />
-			<div class="col-xs-4">
-				<label for="ex3"></label> <input class="form-control" name="autor"
-					id="autor" type="string" placeholder="Autor">
-			</div>
-	</div>
-	<div class="form-group row">
-		<div class="col-xs-4">
-			<label for="ex3"></label> <input class="form-control" name="opis"
-				id="opis" type="string" placeholder="Opis">
-		</div>
-	</div>
-	<button type="submit" value="Save" class="btn btn-primary active">Opublikuj</button>
-	</form:form>
-	</div>
-
-	<c:forEach var="comment" items="${comments}">
-
-		<div class="container">
-			<div class="col-md-12">
-				<h1>${comment.autor }</h1>
-
-
-				<div>
-					<span class="badge">${comment.opis }</span>
-					<div class="pull-right">
-						<span class="label label-default">alice</span> <span
-							class="label label-primary">story</span> <span
-							class="label label-success">blog</span> <span
-							class="label label-info">personal</span> <span
-							class="label label-warning">Warning</span> <span
-							class="label label-danger">Danger</span>
-					</div>
-				</div>
-				<hr>
-			</div>
-		</div>
-	</c:forEach>
-	<hr>
-
-
-	</div>
-</body>
 </html>

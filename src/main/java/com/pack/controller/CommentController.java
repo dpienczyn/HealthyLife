@@ -54,7 +54,7 @@ public class CommentController {
 		Map<String, Object> model = new HashMap<String, Object>();
 		comment.setPost(post);
 		post.addComment(comment);
-        model.put("comment", new Comment());
+        model.put("view", new Comment());
        /*model.put("lista", lista);*/
         return new ModelAndView("view", model);
 
@@ -67,6 +67,6 @@ public class CommentController {
 		comment.setPost(post);
 		post.addComment(comment);
 		commentService.saveOrUpdate(comment);
-	    return new ModelAndView("redirect:/{postid}/comments");
+	    return new ModelAndView("redirect:/{postid}");
 	}
 }

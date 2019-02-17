@@ -38,11 +38,13 @@ public class BMR {
 	@Column(precision = 5, scale = 2)
 	public double wagaKobieta(){
 		double wagak = 665+(9.6*waga)+(1.8*wzrost)-(4.7*wiek);
+		wagak=Math.round(wagak);
 		return wagak;
 	}
 	@Column(precision = 5, scale = 2)
 	public double wagaMezczyzna(){
 		double wagam = 66+(13.7*waga)+(5*wzrost)-(6.76*wiek);
+		wagam=Math.round(wagam);
 		return wagam;
 	}
 }

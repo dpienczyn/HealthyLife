@@ -28,7 +28,7 @@ public class BmiController {
         result = vbmi.getWeight() / (wzrost*wzrost);
         //result /= 100;
         //result *=100;
-        result = Math.round(result);
+        
         
         if(result<=18){
         	mv.addObject("r", "Niedowaga");

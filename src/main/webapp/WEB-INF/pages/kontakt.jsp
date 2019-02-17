@@ -84,7 +84,7 @@
                       </li>
                       <li><a href="events.html">Events</a></li>
                       <li><a href="about.html">About Studio</a></li>
-                      <li class="active"><a href="contact.html">Contact</a></li>
+                      <li class="active"><a href="contact.html">Kontakt</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -100,8 +100,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h2 class="caption mb-2">Get In Touch</h2>
-              <h1 class="">Contact</h1>
+              <h2 class="caption mb-2"></h2>
+              <h1 class="">Kontakt</h1>
               
             </div>
           </div>
@@ -142,36 +142,36 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2 class="mb-5">Yoga Features</h2>
+            <h2 class="mb-5">Kilka zasad zdrowego odzywiania</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="text-center item">
               <span class="flaticon-001-stone display-3 mb-3 d-block text-primary"></span>
-              <h2 class="h5">Peace of Mind</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
+              <h2 class="h5">Odżywiaj się regularnie</h2>
+              <p></p>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="text-center item">
               <span class="flaticon-002-lotus display-3 mb-3 d-block text-primary"></span>
-              <h2 class="h5">Mindfullness</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
+              <h2 class="h5">Spożywaj dużo warzyw i owoców</h2>
+              <p></p>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="text-center item">
               <span class="flaticon-003-meditation display-3 mb-3 d-block text-primary"></span>
-              <h2 class="h5">Meditation</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
+              <h2 class="h5">Ogranicz spożycie węglowodanów, zwiększ spożycie tłuszczu</h2>
+              <p></p>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="text-center item">
               <span class="flaticon-004-carpet display-3 mb-3 d-block text-primary"></span>
-              <h2 class="h5">Yoga Carpet</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde temporibus</p>
+              <h2 class="h5">Nie pij słodkich napojów i ogranicz soki</h2>
+              <p></p>
             </div>
           </div>
 
@@ -179,6 +179,7 @@
         </div>
       </div>
     </div>
+
 
     
     
