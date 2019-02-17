@@ -130,7 +130,7 @@
               </div>
                <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Wzrost</label>
+                  <label class="font-weight-bold" for="email">Wzrost(cm)</label>
                   <input type="double" id="email"  name="wzrost" class="form-control" placeholder="Wzrost">
                 </div>
               </div>

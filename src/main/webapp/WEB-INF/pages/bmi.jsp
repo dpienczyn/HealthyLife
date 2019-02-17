@@ -131,7 +131,7 @@
               
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Wzrost(m)</label>
+                  <label class="font-weight-bold" for="email">Wzrost(cm)</label>
                   <input type="float" id="email" name="height" class="form-control" placeholder="Wzrost(m)">
                 </div>
               </div>
