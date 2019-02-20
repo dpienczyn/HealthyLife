@@ -73,7 +73,7 @@
                           <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
                           <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
                           <li class="has-children">
-                            <a href="classes.html">Produkt</a>
+                            <a href="http://healthylifee.herokuapp.com/product">Produkt</a>
                             <ul class="dropdown">
                               <li><a href="http://healthylifee.herokuapp.com/categories">Kategoria</a></li>
                               
@@ -96,7 +96,7 @@
 
                         </ul>
                       </li>
-                      <li class="active"><a href="contact.html">Kontakt</a></li>
+                      <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                     </ul>
                   </div>
                 </nav>

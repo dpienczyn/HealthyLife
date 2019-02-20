@@ -94,7 +94,7 @@
 
                         </ul>
                       </li>
-                      <li class="active"><a href="contact.html">Kontakt</a></li>
+                      <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                     </ul>
                   </div>
                 </nav>

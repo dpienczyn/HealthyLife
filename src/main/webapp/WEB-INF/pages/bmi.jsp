@@ -55,7 +55,7 @@
           <div class="py-1">
             <div class="row align-items-center">
               <div class="col-2">
-                <h2 class="mb-0 site-logo"><a href="http://healthylifee.herokuapp.com/">Healthy Life</a></h2>
+                <h2 class="mb-0 site-logo"><a href="index.html">Healthy Life</a></h2>
               </div>
               <div class="col-10">
                 <nav class="site-navigation text-right" role="navigation">
@@ -73,7 +73,21 @@
                           <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
                           <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
                           <li class="has-children">
-                            <a href="classes.html">Produkty</a>
+                            <a href="http://healthylifee.herokuapp.com/product">Produkt</a>
+                            <ul class="dropdown">
+                              <li><a href="http://healthylifee.herokuapp.com/categories">Kategoria</a></li>
+                              
+                            </ul>
+                          </li>
+
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="classes.html">Blog</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
+                          <li class="has-children">
+                            <a href="classes.html">Produkt</a>
                             <ul class="dropdown">
                               <li><a href="classes.html">Kategoria</a></li>
                               
@@ -82,9 +96,7 @@
 
                         </ul>
                       </li>
-                      <li><a href="events.html">Events</a></li>
-                      <li><a href="about.html">About Studio</a></li>
-                      <li><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
+                      <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -94,7 +106,6 @@
         </div>
       </div>
     </div>
-  
       
       <div class="site-blocks-cover overlay" style="background-image: url(images/hero_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
