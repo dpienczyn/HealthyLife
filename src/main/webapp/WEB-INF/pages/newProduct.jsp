@@ -33,100 +33,21 @@
 	<link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>" />    
   </head>
   <body>
-  
-  <div class="site-wrap">
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
-    
-    
-    <div class="site-navbar-wrap js-site-navbar bg-white">
-      
-      <div class="container">
-        <div class="site-navbar bg-light">
-          <div class="py-1">
-            <div class="row align-items-center">
-              <div class="col-2">
-                <h2 class="mb-0 site-logo"><a href="index.html">Healthy Life</a></h2>
-              </div>
-              <div class="col-10">
-                <nav class="site-navigation text-right" role="navigation">
-                  <div class="container">
-                    
-                    <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
-                    <ul class="site-menu js-clone-nav d-none d-lg-block">
-                      <li class="">
-                        <a href="http://healthylifee.herokuapp.com/">Home</a>
-                      </li>
-                     <li class="has-children">
-                        <a href="classes.html">Kalkulator</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/bmi">BMI</a></li>
-                          <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
-                          <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
-                          <li class="has-children">
-                            <a href="http://healthylifee.herokuapp.com/product">Produkt</a>
-                            <ul class="dropdown">
-                              <li><a href="http://healthylifee.herokuapp.com/categories">Kategoria</a></li>
-                              
-                            </ul>
-                          </li>
+  <div class="site-block-half d-flex" style="padding-top: 50px;" style="padding-left: 50px;">
 
-                        </ul>
-                      </li>
-                      <li class="has-children">
-                        <a href="classes.html">Blog</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
-                          <li class="has-children">
-                            <a href="classes.html">Produkt</a>
-                            <ul class="dropdown">
-                              <li><a href="classes.html">Kategoria</a></li>
-                              
-                            </ul>
-                          </li>
-
-                        </ul>
-                      </li>
-                      <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-      
-      <div class="site-blocks-cover overlay" style="background-image: url("<c:url value='/resources/images/hero_2.jpg'/>");" data-aos="fade" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-center" data-aos="fade">
-              <h2 class="caption mb-2">Dodaj nowe produkty</h2>
-              <h1 class="">Produkty</h1>
-              
-            </div>
-          </div>
-        </div>
-      </div>  
-
-      
-
-<div class="site-section site-section-sm">
+      <div class="text">
+        <h2 class="font-family-serif">Dodaj nowy produkt</h2>
+        <span class="caption d-block text-primary pl-0 mb-4">produkt</span>
+        <p class="mb-5"></p>
+        <p><a href="http://healthylifee.herokuapp.com/" class="btn btn-primary pill px-4 py-3 text-white">Powrót do strony głównej</a></p>
+		<div class="site-section site-section-sm">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-8 mb-5">
           
             
-           <form:form action="saveProduct" method="post" commandName="product">
+         <form:form action="saveProduct" method="post" commandName="product">
 		<form:hidden path="productId" />
             <form action="#" class="p-5 bg-white">
               <div class="row form-group">
@@ -180,6 +101,8 @@
         </div>
       </div>
     </div>
+</div>
+</div>
 
     <div class="site-section bg-light">
       <div class="container">
@@ -228,37 +151,37 @@
     
 
     
-    <footer class="site-footer">
+      <footer class="site-footer">
       <div class="container">
         
 
         <div class="row">
           <div class="col-md-4">
             <h3 class="footer-heading mb-4 text-white">About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
-            <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+            <p>Jakie są zasady zdrowego odżywiania według nowoczesnej dietetyki? Odżywiaj się regularnie, wybieraj produkty jak najmniej przetworzone, jedz jak najwięcej warzyw, a owoce w dwóch porcjach dziennie, ogranicz spożycie węglowodanów - to najważniejsze zalecenia dietetyków dotyczące zdrowego żywienia.</p>
+            <p><a href="https://www.poradnikzdrowie.pl/diety-i-zywienie/zdrowe-odzywianie/zdrowe-odzywianie-10-najwazniejszych-zasad-aa-BxiR-4hyV-P2Ek.html" class="btn btn-primary pill text-white px-4">Read More</a></p>
           </div>
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-6">
                 <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Approach</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Classes</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/">Blog</a></li>
+                    <li><a href="#http://healthylifee.herokuapp.com/product">Produkty</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/bmi">BMI</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                   </ul>
               </div>
               <div class="col-md-6">
-                <h3 class="footer-heading mb-4 text-white">Ministries</h3>
+                <h3 class="footer-heading mb-4 text-white">Pages</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">Yoga for Health</a></li>
-                    <li><a href="#">Yoga for Resilience</a></li>
-                    <li><a href="#">Yoga Class</a></li>
-                    <li><a href="#">Meditation</a></li>
-                    <li><a href="#">Mind Balance</a></li>
+                    <li><a href="https://www.poradnikzdrowie.pl/diety-i-zywienie/diety/">Dieta</a></li>
+                    <li><a href="https://www.poradnikzdrowie.pl/zdrowie/">Zdrowie</a></li>
+                    <li><a href="https://polki.pl/dieta-i-fitness/zdrowe-odzywianie,sport-i-dieta-poradnik,10374376,artykul.html">Sport</a></li>
+                    <li><a href="https://sante.pl/produkty/">Produkty</a></li>
+                    <li><a href="https://sante.pl/przepisy/">Przepisy</a></li>
                   </ul>
               </div>
             </div>

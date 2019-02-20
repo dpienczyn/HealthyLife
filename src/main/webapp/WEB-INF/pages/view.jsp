@@ -261,37 +261,37 @@
     </div> -->
 
     
-    <footer class="site-footer">
+        <footer class="site-footer">
       <div class="container">
         
 
         <div class="row">
           <div class="col-md-4">
             <h3 class="footer-heading mb-4 text-white">About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
-            <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+            <p>Jakie są zasady zdrowego odżywiania według nowoczesnej dietetyki? Odżywiaj się regularnie, wybieraj produkty jak najmniej przetworzone, jedz jak najwięcej warzyw, a owoce w dwóch porcjach dziennie, ogranicz spożycie węglowodanów - to najważniejsze zalecenia dietetyków dotyczące zdrowego żywienia.</p>
+            <p><a href="https://www.poradnikzdrowie.pl/diety-i-zywienie/zdrowe-odzywianie/zdrowe-odzywianie-10-najwazniejszych-zasad-aa-BxiR-4hyV-P2Ek.html" class="btn btn-primary pill text-white px-4">Read More</a></p>
           </div>
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-6">
                 <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Approach</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Classes</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/">Blog</a></li>
+                    <li><a href="#http://healthylifee.herokuapp.com/product">Produkty</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/bmi">BMI</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
+                    <li><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                   </ul>
               </div>
               <div class="col-md-6">
-                <h3 class="footer-heading mb-4 text-white">Ministries</h3>
+                <h3 class="footer-heading mb-4 text-white">Pages</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">Yoga for Health</a></li>
-                    <li><a href="#">Yoga for Resilience</a></li>
-                    <li><a href="#">Yoga Class</a></li>
-                    <li><a href="#">Meditation</a></li>
-                    <li><a href="#">Mind Balance</a></li>
+                    <li><a href="https://www.poradnikzdrowie.pl/diety-i-zywienie/diety/">Dieta</a></li>
+                    <li><a href="https://www.poradnikzdrowie.pl/zdrowie/">Zdrowie</a></li>
+                    <li><a href="https://polki.pl/dieta-i-fitness/zdrowe-odzywianie,sport-i-dieta-poradnik,10374376,artykul.html">Sport</a></li>
+                    <li><a href="https://sante.pl/produkty/">Produkty</a></li>
+                    <li><a href="https://sante.pl/przepisy/">Przepisy</a></li>
                   </ul>
               </div>
             </div>
