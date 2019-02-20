@@ -157,15 +157,13 @@
                   <input type="submit" value="Oblicz" class="btn btn-primary pill text-white px-5 py-2">
                 </div>
               </div>
-
+</form>
   
             </form:form>
           </div>
         </div>
       </div>
     </div>
-    
-    
 
     <div class="site-section bg-light">
       <div class="container">
@@ -203,7 +201,6 @@
               <p></p>
             </div>
           </div>
-
 
         </div>
       </div>
@@ -248,7 +245,7 @@
               </div>
             </div>
           </div>
-
+          
           
           <div class="col-md-2">
             <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>

@@ -124,7 +124,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-8 mb-5">      
-<div class="row form-group">
+			<div class="row form-group">
                 <div class="col-md-12">
                   <a href="${pageContext.request.contextPath}/product/newProduct"><input type="submit" value="Nowy Produkt" class="btn btn-primary pill text-white px-5 py-2">
                 </div>
@@ -167,6 +167,7 @@
               </div>
               </div>
               </div>    
+    </div>
     
     
 
@@ -211,7 +212,6 @@
         </div>
       </div>
     </div>
-
     
     
     
