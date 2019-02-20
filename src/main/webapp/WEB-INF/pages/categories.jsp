@@ -147,6 +147,7 @@
         <td>${category.categoryId}</td>
         <td>${category.nazwa}</td>
         <td><a href="<c:url value='/categories/editCategory/${category.categoryId}' />" ><input type="submit" value="Edytuj" class="btn btn-primary pill text-white px-5 py-2"></td>
+      	<td><a href="<c:url value='/categories/deleteCategory/${category.categoryId}' />" ><input type="submit" value="Usuń" class="btn btn-primary pill text-white px-5 py-2"></td>
       </tr>
  </c:forEach>
     </tbody>

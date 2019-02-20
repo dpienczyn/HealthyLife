@@ -60,13 +60,10 @@ public class CategoryController {
   return new ModelAndView("redirect:/categories");
  }
  
- @RequestMapping(value = "/deleteCategory", method = RequestMethod.GET)
- public ModelAndView deleteCategory(@ModelAttribute("command")  Category category,
-   BindingResult result) {
-  categoryService.deleteCategory(category.getCategoryId());
-  Map<String, Object> model = new HashMap<String, Object>();
-  model.put("categories",  categoryService.getCategories());
-  return new ModelAndView("addCategory", model);
+ @RequestMapping(value = "/deleteCategory/{categoryId}")
+ public ModelAndView deleteCategory(@PathVariable("categoryId") int categoryId) {
+  categoryService.deleteCategory(categoryId);
+  return new ModelAndView("redirect:/categories");
  }
  
  @RequestMapping(value = "/editCategory/{categoryId}")
