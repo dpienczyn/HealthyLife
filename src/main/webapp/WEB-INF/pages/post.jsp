@@ -59,7 +59,7 @@
                 <nav class="site-navigation text-right" role="navigation">
                   <div class="container">
                     
-                   <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+                    <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li class="">
                         <a href="http://healthylifee.herokuapp.com/">Home</a>
@@ -71,7 +71,21 @@
                           <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
                           <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
                           <li class="has-children">
-                            <a href="classes.html">Produkty</a>
+                            <a href="classes.html">Produkt</a>
+                            <ul class="dropdown">
+                              <li><a href="http://healthylifee.herokuapp.com/categories">Kategoria</a></li>
+                              
+                            </ul>
+                          </li>
+
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="classes.html">Blog</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
+                          <li class="has-children">
+                            <a href="classes.html">Produkt</a>
                             <ul class="dropdown">
                               <li><a href="classes.html">Kategoria</a></li>
                               
@@ -80,9 +94,7 @@
 
                         </ul>
                       </li>
-                      <li><a href="events.html">Blog</a></li>
-                      <li class="active"><a href="about.html">Rejestracja</a></li>
-                      <li><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
+                      <li class="active"><a href="contact.html">Kontakt</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -130,6 +142,7 @@
               </div>
             </div>
           </div>
+          
            </c:forEach>
         </div>
        
