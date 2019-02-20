@@ -82,7 +82,7 @@ public class ProductController {
 	 }
 	
 	@RequestMapping(value = "/saveProduct", method = RequestMethod.POST)
-	public ModelAndView saveProduct(@ModelAttribute Product product) {
+	public ModelAndView saveProduct(@ModelAttribute("product") Product product) {
 	    productService.saveOrUpdate(product);
 	    return new ModelAndView("redirect:/product");
 	}

@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
@@ -37,17 +36,102 @@
   </head>
   <body>
   
-<div class="site-block-half d-flex" style="padding-top: 50px;" style="padding-left: 50px;">
+  <div class="site-wrap">
 
-      <div class="text">
-        <h2 class="font-family-serif">Twój wynik wynosi: ${ calo}kcal</h2>
-        <span class="caption d-block text-primary pl-0 mb-4"></span>
-        <p class="mb-5"></p>
-        <p><a href="http://healthylifee.herokuapp.com/" class="btn btn-primary pill px-4 py-3 text-white">Powrót do strony głównej</a></p>
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    
+    <div class="site-navbar-wrap js-site-navbar bg-white">
+      
+      <div class="container">
+        <div class="site-navbar bg-light">
+          <div class="py-1">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo"><a href="index.html">Healthy Life</a></h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    
+                    <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                      <li class="">
+                        <a href="http://healthylifee.herokuapp.com/">Home</a>
+                      </li>
+                     <li class="has-children">
+                        <a href="classes.html">Kalkulator</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="http://healthylifee.herokuapp.com/bmi">BMI</a></li>
+                          <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
+                          <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
+                          <li class="has-children">
+                            <a href="classes.html">Produkty</a>
+                            <ul class="dropdown">
+                              <li><a href="classes.html">Kategoria</a></li>
+                              
+                            </ul>
+                          </li>
 
+                        </ul>
+                      </li>
+                      <li><a href="events.html">Events</a></li>
+                      <li><a href="about.html">About Studio</a></li>
+                      <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  
+      
+      <div class="site-blocks-cover overlay" style="background-image: url(images/hero_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center" data-aos="fade">
+              <h2 class="caption mb-2">Dodaj nowy artykuł</h2>
+              <h1 class="">Post</h1>
+              
+            </div>
+          </div>
+        </div>
+      </div>  
 
+      
+
+    <div class="site-section site-section-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8 mb-5">
+          
+            
+         <form:form action="saveCategory" method="post" commandName="command">
+		<form:hidden path="categoryId" />
+            <div class="form-group row">
+			<div class="col-xs-4">
+				<label for="ex3"></label> <input class="form-control" name="nazwa"
+					id="ex3" type="string" placeholder="Nazwa">
+			</div>
+		</div>
+		<button type="submit" value="Save" class="btn btn-primary active">Oblicz</button>
+  
+            </form:form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     
 
     <div class="site-section bg-light">
@@ -91,7 +175,6 @@
         </div>
       </div>
     </div>
-
     
     
     

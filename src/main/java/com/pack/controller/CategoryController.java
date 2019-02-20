@@ -41,19 +41,19 @@ public class CategoryController {
      return model;
  }
  
+ @RequestMapping(value = "/addCategory", method = RequestMethod.GET)
+ public ModelAndView addCategory(@ModelAttribute("command")  Category category,
+   BindingResult result) {
+  Map<String, Object> model = new HashMap<String, Object>();
+  model.put("newCategory",  categoryService.getCategories());
+  return new ModelAndView("newCategory", model);
+ }
+ 
  @RequestMapping(value = "/saveCategory", method = RequestMethod.POST)
  public ModelAndView saveEmployee(@ModelAttribute("command") Category category, 
    BindingResult result) {
   categoryService.addCategory(category);
   return new ModelAndView("redirect:/categories");
- }
- 
- @RequestMapping(value = "/addCategory", method = RequestMethod.GET)
- public ModelAndView addCategory(@ModelAttribute("command")  Category category,
-   BindingResult result) {
-  Map<String, Object> model = new HashMap<String, Object>();
-  model.put("categories",  categoryService.getCategories());
-  return new ModelAndView("addCategory", model);
  }
  
  @RequestMapping(value = "/deleteCategory", method = RequestMethod.GET)
