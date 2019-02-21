@@ -20,7 +20,7 @@ import com.pack.service.CommentService;
 import com.pack.service.PostService;
 
 
-@RequestMapping(value="/{postid}/comments")
+@RequestMapping(value="/{postid}")
 @Controller
 public class CommentController {
 	
@@ -54,7 +54,7 @@ public class CommentController {
 		Map<String, Object> model = new HashMap<String, Object>();
 		comment.setPost(post);
 		post.addComment(comment);
-        model.put("view", new Comment());
+        model.put("comment", new Comment());
        /*model.put("lista", lista);*/
         return new ModelAndView("view", model);
 

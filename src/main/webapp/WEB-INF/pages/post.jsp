@@ -136,7 +136,16 @@
               <div class="p-4">
                 <h3 class="heading mb-0 h5 "><a href="#" class="text-black">${post.tytul }</a></h3>
                 <p class="mb-3">${post.autor }</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta labore recusandae soluta quis.</p>
+                  <div class="site-section site-section-sm">
+      <div class="container">
+        <div class="row">
+    <div class="row form-group">
+                <div class="col-md-12">
+                  <a href="<c:url value='/deletePost/${post.postid}' />" ><input type="submit" value="Usuń Post" class="btn btn-primary pill text-white px-5 py-2">
+                </div>
+              </div>
+              </div>
+              </div>
                 <p><a href="${pageContext.request.contextPath}/${post.postid}" class="text-primary">Read More <span class="icon-arrow-right small"></span></a></p>
               
               </div>

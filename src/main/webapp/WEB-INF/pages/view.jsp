@@ -142,16 +142,6 @@
 
       </div>
     </div>
-    <div class="site-section site-section-sm">
-      <div class="container">
-        <div class="row">
-    <div class="row form-group">
-                <div class="col-md-12">
-                  <a href="<c:url value='/deletePost/${post.postid}' />" ><input type="submit" value="Usuń Post" class="btn btn-primary pill text-white px-5 py-2">
-                </div>
-              </div>
-              </div>
-              </div>
               </div>
 </c:forEach>
 	

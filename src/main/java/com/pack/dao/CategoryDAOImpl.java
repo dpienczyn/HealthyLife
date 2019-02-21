@@ -38,4 +38,5 @@ public class CategoryDAOImpl implements CategoryDAO{
 			this.sessionFactory.getCurrentSession().delete(category);
 		}
 	}
+
 }
