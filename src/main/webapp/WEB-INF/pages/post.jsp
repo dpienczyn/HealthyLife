@@ -142,7 +142,7 @@
               </div>
               </div>
               </div>
-                <p><a href="${pageContext.request.contextPath}/${post.postid}" class="text-primary">Read More <span class="icon-arrow-right small"></span></a></p>
+                <p><a href="${pageContext.request.contextPath}/posts/${post.postid}" class="text-primary">Read More <span class="icon-arrow-right small"></span></a></p>
               
               </div>
             </div>
