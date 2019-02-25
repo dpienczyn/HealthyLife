@@ -83,9 +83,9 @@
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a href="http://healthylifee.herokuapp.com/">Blog</a>
+                        <a href="http://healthylifee.herokuapp.com/posts">Blog</a>
                         <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
+                          <li><a href="http://healthylifee.herokuapp.com/posts/newPost">Nowy Post</a></li>
                           <li class="has-children">
                             <a href="classes.html">Produkt</a>
                             <ul class="dropdown">
