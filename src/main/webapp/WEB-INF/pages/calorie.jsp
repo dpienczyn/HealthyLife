@@ -83,20 +83,16 @@
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a href="classes.html">Blog</a>
+                        <a href="http://healthylifee.herokuapp.com/posts">Blog</a>
                         <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
-                          <li class="has-children">
-                            <a href="classes.html">Produkt</a>
-                            <ul class="dropdown">
-                              <li><a href="classes.html">Kategoria</a></li>
-                              
-                            </ul>
-                          </li>
+                          <li><a href="http://healthylifee.herokuapp.com/posts/newPost">Nowy Post</a></li>
 
                         </ul>
                       </li>
                       <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
+                    <li class="">
+                        <a href="http://localhost:8098/Aplikacja/logout">Wyloguj</a>
+                    </li>
                     </ul>
                   </div>
                 </nav>
