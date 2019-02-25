@@ -38,4 +38,11 @@ public class CategoryServiceImpl implements CategoryService{
 		
 	}
 
+	@Override
+	public Category updateCategory(Category category) {
+		return categoryDAO.updateCategory(category);
+	}
+
+	
+
 }

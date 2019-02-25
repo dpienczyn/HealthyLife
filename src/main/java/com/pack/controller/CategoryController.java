@@ -57,6 +57,7 @@ public class CategoryController {
  public ModelAndView saveEmployee(@ModelAttribute("command") Category category, 
    BindingResult result) {
   categoryService.addCategory(category);
+  categoryService.updateCategory(category);
   return new ModelAndView("redirect:/categories");
  }
  
@@ -66,11 +67,13 @@ public class CategoryController {
   return new ModelAndView("redirect:/categories");
  }
  
- @RequestMapping(value = "/editCategory/{categoryId}")
- public ModelAndView editCategory(@PathVariable("categoryId")  Model model, HttpServletRequest request) {
-  int categoryId = Integer.parseInt(request.getParameter("categoryId"));
-  model.addAttribute("category",  this.categoryService.getCategory(categoryId));
-  model.addAttribute("listCategory",  this.categoryService.getCategories());
-  return new ModelAndView("newCategory");
+ @RequestMapping(value = "/editCategory" , method = RequestMethod.GET)
+ public ModelAndView editCategory(HttpServletRequest request) {
+	 int categoryId = Integer.parseInt(request.getParameter("categoryId"));
+     Category category = categoryService.getCategory(categoryId);
+     ModelAndView model = new ModelAndView("editCategory");
+     model.addObject("category", category);
+
+     return model;
  }
 }

@@ -46,7 +46,7 @@ public class CommentController {
 	}
 	
 	@RequestMapping(value = "/newComment", method = RequestMethod.GET)
-    public ModelAndView newComment(@PathVariable int postid, @ModelAttribute("comment") Comment comment,
+    public ModelAndView newComment(@PathVariable("postid") int postid, @ModelAttribute("comment") Comment comment,
     		   BindingResult result){
 		Post post = postService.get(postid);
 		/*List<Post> lista = postService.getAllPosts(postid);
@@ -61,7 +61,7 @@ public class CommentController {
     }
 	
 	@RequestMapping(value = "/saveComment", method = RequestMethod.POST)
-	public ModelAndView saveComment(@PathVariable int postid, @ModelAttribute("comment") Comment comment) {
+	public ModelAndView saveComment(@PathVariable("postid") int postid, @ModelAttribute("comment") Comment comment,BindingResult result) {
 		List<Post> list = postService.getAllPosts(postid);
 		Post post = postService.get(postid);
 		comment.setPost(post);
