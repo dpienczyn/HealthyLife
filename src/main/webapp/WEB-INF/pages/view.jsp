@@ -90,7 +90,7 @@
                       </li>
                       <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                     <li class="">
-                        <a href="http://localhost:8098/Aplikacja/logout">Wyloguj</a>
+                        <a href="http://healthylifee.herokuapp.com/logout">Wyloguj</a>
                     </li>
                     </ul>
                   </div>
