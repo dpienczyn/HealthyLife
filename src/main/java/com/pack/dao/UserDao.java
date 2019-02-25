@@ -7,14 +7,13 @@ import java.util.List;
  
 public interface UserDao {
 	 
-    User findById(int id);
+	public void saveOrUpdate(User user);
+    
+    public void delete(int id);
      
-    User findBySSO(String sso);
-     
-    void save(User user);
-     
-    void deleteBySSO(String sso);
-     
-    List<User> findAllUsers();
- 
+    public User get(int id);
+	public List<User> getAllUser();
+	public List<User> getAllUser(int id);
+	public boolean checkLogin(String userId, String password);
+	
 }

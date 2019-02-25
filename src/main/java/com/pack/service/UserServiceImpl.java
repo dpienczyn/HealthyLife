@@ -11,61 +11,44 @@ import com.pack.dao.UserDao;
 import com.pack.model.User;
  
  
-@Service("userService")
+@Service
 @Transactional
 public class UserServiceImpl implements UserService{
- 
-    @Autowired
-    private UserDao dao;
- 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
-     
-    public User findById(int id) {
-        return dao.findById(id);
-    }
- 
-    public User findBySSO(String sso) {
-        User user = dao.findBySSO(sso);
-        return user;
-    }
- 
-    public void saveUser(User user) {
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        dao.save(user);
-    }
- 
-    /*
-     * Since the method is running with Transaction, No need to call hibernate update explicitly.
-     * Just fetch the entity from db and update it with proper values within transaction.
-     * It will be updated in db once transaction ends. 
-     */
-    public void updateUser(User user) {
-        User entity = dao.findById(user.getId());
-        if(entity!=null){
-            entity.setSsoId(user.getSsoId());
-            if(!user.getPassword().equals(entity.getPassword())){
-                entity.setPassword(passwordEncoder.encode(user.getPassword()));
-            }
-            entity.setFirstName(user.getFirstName());
-            entity.setLastName(user.getLastName());
-            entity.setEmail(user.getEmail());
-            entity.setUserProfiles(user.getUserProfiles());
-        }
-    }
- 
-     
-    public void deleteUserBySSO(String sso) {
-        dao.deleteBySSO(sso);
-    }
- 
-    public List<User> findAllUsers() {
-        return dao.findAllUsers();
-    }
- 
-    public boolean isUserSSOUnique(Integer id, String sso) {
-        User user = findBySSO(sso);
-        return ( user == null || ((id != null) && (user.getId() == id)));
-    }
-     
+
+	
+	@Autowired 
+	private UserDao userDao;
+	
+	@Override
+	public void delete(int id) {
+		userDao.delete(id);
+		
+	}
+
+	@Override
+	public User get(int id) {
+		return userDao.get(id);
+	}
+
+	@Transactional
+	public List<User> getAllUser() {
+		return userDao.getAllUser();
+	}
+
+	@Override
+	public List<User> getAllUser(int id) {
+		return userDao.getAllUser(id);
+	}
+
+	@Override
+	public void saveOrUpdate(User user) {
+		userDao.saveOrUpdate(user);
+		
+	}
+
+	@Override
+	public boolean checkLogin(String userId, String password) {
+		return userDao.checkLogin(userId, password);
+	}
+
 }

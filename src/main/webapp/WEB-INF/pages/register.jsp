@@ -36,7 +36,7 @@
   </head>
   <body>
   
-  <div class="site-wrap">
+<div class="site-wrap">
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -64,35 +64,10 @@
                     <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li class="">
-                        <a href="http://healthylifee.herokuapp.com/">Home</a>
+                        <a href="http://healthylifee.herokuapp.com/login">Logowanie</a>
                       </li>
-                     <li class="has-children">
-                        <a href="classes.html">Kalkulator</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/bmi">BMI</a></li>
-                          <li><a href="http://healthylifee.herokuapp.com/calorie">Kalorie</a></li>
-                          <li><a href="http://healthylifee.herokuapp.com/bmr">BMR</a></li>
-                          <li class="has-children">
-                            <a href="http://healthylifee.herokuapp.com/product">Produkt</a>
-                            <ul class="dropdown">
-                              <li><a href="http://healthylifee.herokuapp.com/categories">Kategoria</a></li>
-                              
-                            </ul>
-                          </li>
-
-                        </ul>
-                      </li>
-                      <li class="has-children">
-                        <a href="http://healthylifee.herokuapp.com/">Blog</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
-
-                        </ul>
-                      </li>
+                     
                       <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
-                    <li class="">
-                        <a href="http://localhost:8098/Aplikacja/logout">Wyloguj</a>
-                    </li>
                     </ul>
                   </div>
                 </nav>
@@ -102,13 +77,14 @@
         </div>
       </div>
     </div>
+  
       
       <div class="site-blocks-cover overlay" style="background-image: url(images/hero_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h2 class="caption mb-2">Twoje logowanie zakończyło się sukcesem</h2>
-              <h1 class="">Witaj ${user.userId }! </h1>
+              <h2 class="caption mb-2">Dołącz do Nas!</h2>
+              <h1 class="">Rejestracja</h1>
               
             </div>
           </div>
@@ -121,12 +97,33 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-8 mb-5">
-          Zdrowe odżywianie – sposób odżywiania, polegający na przyjmowaniu substancji korzystnych dla zdrowia w celu zapewnienia lub poprawy zdrowia. Istotne jest zmniejszenie ryzyka wystąpienia chorób takich jak otyłość, nowotwory, choroby serca. Zdrowa dieta polega na przyjmowaniu odpowiednich ilości niezbędnych składników odżywczych i wody. Składniki pokarmowe mogą być dostarczane w postaci różnych produktów, dlatego wiele sposobów odżywiania i diet może być uznane za zdrowe. 
+          
+            
+          <form action="saveUser" method="post" modelAttribute="user">
+            <form action="#" class="p-5 bg-white">
+              <div class="row form-group">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="font-weight-bold" for="fullname">Login</label>
+                  <input type="text" id="fullname" name="userId" class="form-control" placeholder="Login">
+                </div>
+              </div>
+               <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="font-weight-bold" for="email">Hasło</label>
+                  <input type="password" id="email"  name="password" class="form-control" placeholder="Hasło">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Rejestracja" class="btn btn-primary pill text-white px-5 py-2"> 
+                </div>
+              </div>
+</form>
+</form>
           </div>
         </div>
       </div>
     </div>
-    
 
     <div class="site-section bg-light">
       <div class="container">
@@ -165,7 +162,6 @@
             </div>
           </div>
 
-
         </div>
       </div>
     </div>
@@ -174,8 +170,7 @@
     
     
 
-    
-    <footer class="site-footer">
+       <footer class="site-footer">
       <div class="container">
         
 
@@ -211,6 +206,7 @@
             </div>
           </div>
           
+          
           <div class="col-md-2">
             <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>
               <div class="col-md-12">
@@ -228,7 +224,7 @@
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Dominika Pienczyn</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>

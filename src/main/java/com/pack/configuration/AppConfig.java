@@ -14,18 +14,12 @@ import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
-
-import com.pack.converter.RoleToUserProfileConverter;
  
  
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.pack")
 public class AppConfig extends WebMvcConfigurerAdapter{
-     
-     
-    @Autowired
-    RoleToUserProfileConverter roleToUserProfileConverter;
      
  
     /**
@@ -54,10 +48,7 @@ public class AppConfig extends WebMvcConfigurerAdapter{
      * Configure Converter to be used.
      * In our example, we need a converter to convert string values[Roles] to UserProfiles in newUser.jsp
      */
-    @Override
-    public void addFormatters(FormatterRegistry registry) {
-        registry.addConverter(roleToUserProfileConverter);
-    }
+   
      
  
     /**

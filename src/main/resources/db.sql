@@ -1,8 +1,8 @@
-CREATE TABLE `image` (
-  `imageid` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) NOT NULL,
-  `data` longblob NOT NULL,
-  PRIMARY KEY (`imageid`)
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userId` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `post` (

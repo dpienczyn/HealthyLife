@@ -7,18 +7,11 @@ import com.pack.model.User;
  
 public interface UserService {
     
-    User findById(int id);
-     
-    User findBySSO(String sso);
-     
-    void saveUser(User user);
-     
-    void updateUser(User user);
-     
-    void deleteUserBySSO(String sso);
- 
-    List<User> findAllUsers(); 
-     
-    boolean isUserSSOUnique(Integer id, String sso);
- 
+	public void saveOrUpdate(User user);
+	public void delete(int id);
+    
+    public User get(int id);
+	public List<User> getAllUser();
+	public List<User> getAllUser(int id);
+	public boolean checkLogin(String userId, String password);
 }
