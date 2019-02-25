@@ -20,7 +20,7 @@ import com.pack.service.CommentService;
 import com.pack.service.PostService;
 
 
-@RequestMapping(value="/{postid}")
+@RequestMapping(value="posts/{postid}")
 @Controller
 public class CommentController {
 	
