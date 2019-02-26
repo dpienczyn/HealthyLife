@@ -61,7 +61,7 @@ Zobaczysz zapotrzebowanie na białko, węglowodany oraz tłuszcze i przekonasz s
 Oblicz zapotrzebowanie kaloryczne odpowiednie dla Ciebie i zacznij działać!
 
 Kalkulator spalonych kalorii niech towarzyszy Ci podczas całego procesu treningowego pamiętaj o tym aby wszystkie składniki w Twoim odżywianiu pokrywały również zapotrzebowanie na wodę, witaminy i minerały(magnez, wapń), to zapewni Ci pełną energię do treningów !</p>
-        <p><a href="http://healthylifee.herokuapp.com/" class="btn btn-primary pill px-4 py-3 text-white">Powrót do strony głównej</a></p>
+        <p><a href="http://healthylifee.herokuapp.com/posts" class="btn btn-primary pill px-4 py-3 text-white">Powrót do strony głównej</a></p>
 
       </div>
     </div>

@@ -35,7 +35,6 @@
   <body>
   
   <div class="site-wrap">
-
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -46,8 +45,7 @@
     </div> <!-- .site-mobile-menu -->
     
     
-    <div class="site-navbar-wrap js-site-navbar bg-white">
-      
+    <div class="site-navbar-wrap js-site-navbar bg-white"> 
       <div class="container">
         <div class="site-navbar bg-light">
           <div class="py-1">
@@ -73,17 +71,15 @@
                           <li class="has-children">
                             <a href="http://healthylifee.herokuapp.com/product">Produkt</a>
                             <ul class="dropdown">
-                              <li><a href="http://healthylifee.herokuapp.com/categories">Kategoria</a></li>
-                              
+                              <li><a href="http://healthylifee.herokuapp.com/categories">Kategoria</a></li> 
                             </ul>
                           </li>
-
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a href="http://healthylifee.herokuapp.com/">Blog</a>
+                        <a href="http://healthylifee.herokuapp.com/posts">Blog</a>
                         <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
+                          <li><a href="http://healthylifee.herokuapp.com/posts/newPost">Nowy Post</a></li>
 						</ul>
                       </li>
                        <li class="active"><a href="http://healthylifee.herokuapp.com/logout">Wyloguj</a></li>
@@ -104,8 +100,7 @@
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
               <h2 class="caption mb-2"></h2>
-              <h1 class="">Healthy Life</h1>
-              
+              <h1 class="">Healthy Life</h1>   
             </div>
           </div>
         </div>
@@ -123,21 +118,16 @@
         <c:forEach var="post" items="${listPost}">
           <div class="col-md-6 col-lg-4 mb-5">
             <div class="hotel-room text-center">
-            
               <a href="#" class="d-block mb-4 thumbnail"><img src="resources/images/person_1.jpg" alt="Image" class="img-fluid  rounded-circle w-50"></a>
               <div class="p-4">
                 <h3 class="heading mb-0 h5 "><a href="#" class="text-black">${post.tytul }</a></h3>
-                <p class="mb-3">${post.autor }</p>
-                  
+                <p class="mb-3">${post.autor }</p>       
                 <p><a href="${pageContext.request.contextPath}/posts/${post.postid}" class="text-primary">Read More <span class="icon-arrow-right small"></span></a></p>
-              
               </div>
             </div>
-          </div>
-          
+          </div> 
            </c:forEach>
         </div>
-       
       </div>
     </div>
     
@@ -186,10 +176,8 @@
     
 
     
-       <footer class="site-footer">
+     <footer class="site-footer">
       <div class="container">
-        
-
         <div class="row">
           <div class="col-md-4">
             <h3 class="footer-heading mb-4 text-white">About</h3>
@@ -284,6 +272,5 @@
                 }
             });
     </script>
-
   </body>
 </html>

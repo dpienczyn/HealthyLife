@@ -43,7 +43,7 @@
         <h2 class="font-family-serif">Twój wynik wynosi: ${ calo}kcal</h2>
         <span class="caption d-block text-primary pl-0 mb-4"></span>
         <p class="mb-5"></p>
-        <p><a href="http://healthylifee.herokuapp.com/" class="btn btn-primary pill px-4 py-3 text-white">Powrót do strony głównej</a></p>
+        <p><a href="http://healthylifee.herokuapp.com/posts" class="btn btn-primary pill px-4 py-3 text-white">Powrót do strony głównej</a></p>
 
       </div>
     </div>
