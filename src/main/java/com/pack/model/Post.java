@@ -27,7 +27,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Table(name = "post")
 public class Post implements Serializable{
 
-	private static final long serialVersionUID = 8538629616831690171L;
+	//private static final long serialVersionUID = 8538629616831690171L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

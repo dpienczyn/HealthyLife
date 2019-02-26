@@ -7,7 +7,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <title>Healthy Life &mdash; Application</title>
     <meta charset="utf-8">
@@ -91,7 +91,7 @@
                       </li>
                       <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                     <li class="">
-                        <a href="http://localhost:8098/Aplikacja/logout">Wyloguj</a>
+                        <a href="http://healthylifee.herokuapp.com/logout">Wyloguj</a>
                     </li>
                     </ul>
                   </div>

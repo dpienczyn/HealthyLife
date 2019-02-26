@@ -7,7 +7,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <title>Healthy Life &mdash; Application</title>
     <meta charset="utf-8">
@@ -35,7 +35,7 @@
   </head>
   <body>
   
-<div class="site-wrap">
+   <div class="site-wrap">
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -63,7 +63,7 @@
                     <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li class="">
-                        <a href="http://healthylifee.herokuapp.com/posts">Home</a>
+                        <a href="http://healthylifee.herokuapp.com/">Home</a>
                       </li>
                      <li class="has-children">
                         <a href="classes.html">Kalkulator</a>
@@ -82,16 +82,13 @@
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a href="http://healthylifee.herokuapp.com/posts">Blog</a>
+                        <a href="http://healthylifee.herokuapp.com/">Blog</a>
                         <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/posts/newPost">Nowy Post</a></li>
-
-                        </ul>
+                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
+						</ul>
                       </li>
+                       <li class="active"><a href="http://healthylifee.herokuapp.com/logout">Wyloguj</a></li>
                       <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
-                    <li class="">
-                        <a href="http://healthylifee.herokuapp.com/logout">Wyloguj</a>
-                    </li>
                     </ul>
                   </div>
                 </nav>
@@ -101,7 +98,7 @@
         </div>
       </div>
     </div>
-  
+    
     
     <div class="slide-one-item home-slider owl-carousel">
       
@@ -135,7 +132,7 @@
         <h2 class="font-family-serif">${post.tytul} </h2>
         <span class="caption d-block text-primary pl-0 mb-4">${post.autor }</span>
         <p class="mb-5"> ${post.opis} </p>
-
+        <p><a href="<c:url value='/deletePost/${post.postid}' />" class="text-primary">Usuń Artykuł <span class="icon-arrow-right small"></span></a></p>
       </div>
     </div>
               </div>
@@ -159,14 +156,14 @@
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="fullname">Autor</label>
-                  <input type="string" id="fullname" name="autor" class="form-control" placeholder="Autor">
+                  <input type="text" id="fullname" name="autor" class="form-control" placeholder="Autor">
                 </div>
               </div>
               
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Opis</label>
-                  <input type="string" id="email" name="opis" class="form-control" placeholder="Opis">
+                  <input type="text" id="email" name="opis" class="form-control" placeholder="Opis">
                 </div>
               </div>
               <div class="row form-group">
@@ -174,6 +171,7 @@
                   <input type="submit" value="Save" class="btn btn-primary pill text-white px-5 py-2">
                 </div>
               </div>
+              </form>
             </form:form>
           </div>
         </div>
@@ -310,23 +308,23 @@
       </div>
     </footer>
   </div>
-
-  <script src="resources/js/jquery-3.3.1.min.js"></script>
-  <script src="resources/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="resources/js/jquery-ui.js"></script>
-  <script src="resources/js/popper.min.js"></script>
-  <script src="resources/js/bootstrap.min.js"></script>
-  <script src="resources/js/owl.carousel.min.js"></script>
-  <script src="resources/js/jquery.stellar.min.js"></script>
-  <script src="resources/js/jquery.countdown.min.js"></script>
-  <script src="resources/js/jquery.magnific-popup.min.js"></script>
-  <script src="resources/js/bootstrap-datepicker.min.js"></script>
-  <script src="resources/js/aos.js"></script>
+	
+  <script src="/resources/js/jquery-3.3.1.min.js"></script>
+  <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/resources/js/jquery-ui.js"></script>
+  <script src="/resources/js/popper.min.js"></script>
+  <script src="/resources/js/bootstrap.min.js"></script>
+  <script src="/resources/js/owl.carousel.min.js"></script>
+  <script src="/resources/js/jquery.stellar.min.js"></script>
+  <script src="/resources/js/jquery.countdown.min.js"></script>
+  <script src="/resources/js/jquery.magnific-popup.min.js"></script>
+  <script src="/resources/js/bootstrap-datepicker.min.js"></script>
+  <script src="/resources/js/aos.js"></script>
 
   
-  <script src="resources/js/mediaelement-and-player.min.js"></script>
+  <script src="/resources/js/mediaelement-and-player.min.js"></script>
 
-  <script src="resources/js/main.js"></script>
+  <script src="/resources/js/main.js"></script>
     
 
   <script>

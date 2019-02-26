@@ -22,10 +22,10 @@ import org.hibernate.annotations.Cascade;
 @Table(name = "product")
 public class Product implements Serializable {
 	
-	private static final long serialVersionUID = -573514507307807945L;
+	//private static final long serialVersionUID = -573514507307807945L;
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "productId")
 	private int productId;
 	
