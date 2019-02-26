@@ -132,7 +132,7 @@
         <h2 class="font-family-serif">${post.tytul} </h2>
         <span class="caption d-block text-primary pl-0 mb-4">${post.autor }</span>
         <p class="mb-5"> ${post.opis} </p>
-        <p><a href="<c:url value='/deletePost/${post.postid}' />" class="text-primary">Usuń Artykuł <span class="icon-arrow-right small"></span></a></p>
+        <p><a href="<c:url value='/posts/deletePost/${post.postid}' />" class="text-primary">Usuń Artykuł <span class="icon-arrow-right small"></span></a></p>
       </div>
     </div>
               </div>

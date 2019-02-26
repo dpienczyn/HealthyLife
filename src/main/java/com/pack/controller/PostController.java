@@ -95,6 +95,6 @@ public class PostController {
 	@RequestMapping(value = "/deletePost/{postid}")
 	public ModelAndView deletePost(@PathVariable("postid") int postid) {
 	    postService.delete(postid);
-	    return new ModelAndView("redirect:/");
+	    return new ModelAndView("redirect:/posts");
 	}
 }
