@@ -1,6 +1,5 @@
 package com.pack.model;
 
-import java.io.Serializable;
 import java.sql.Blob;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -11,8 +10,6 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -25,12 +22,11 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 @Table(name = "post")
-public class Post implements Serializable{
+public class Post{
 
 	//private static final long serialVersionUID = 8538629616831690171L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="postid")
 	private int postid;
 	
