@@ -67,6 +67,6 @@ public class CommentController {
 		comment.setPost(post);
 		post.addComment(comment);
 		commentService.saveOrUpdate(comment);
-	    return new ModelAndView("redirect:/{postid}");
+	    return new ModelAndView("redirect:/posts/{postid}");
 	}
 }

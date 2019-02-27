@@ -127,7 +127,7 @@
     </div>
 <c:forEach var="post" items="${lista}">
     <div class="site-block-half d-flex">
-      <div class="image bg-image" style="background-image"><img src="resources/images/1.jpg" alt="Image" class="responsive"></div>
+      <div class="image bg-image" style="background-image"><img src="resources/images/1.jpg" alt="Image" class="responsive">
       <div class="text">
         <h2 class="font-family-serif">${post.tytul} </h2>
         <span class="caption d-block text-primary pl-0 mb-4">${post.autor }</span>
@@ -135,48 +135,20 @@
         <p><a href="<c:url value='/posts/deletePost/${post.postid}' />" class="text-primary">Usuń Artykuł <span class="icon-arrow-right small"></span></a></p>
       </div>
     </div>
-              </div>
+   </div>
 </c:forEach>
-	
-    <div class="site-section site-section-sm">
+
+
+<div class="site-section site-section-sm">
+<c:forEach var="post" items="${lista}">
       <div class="container">
-        <div class="row">
-        
-          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2>Dodaj komentarz</h2>
-          </div>
-        </div>
-          <div class="col-md-12 col-lg-8 mb-5">
-          
-            
-          <form:form action="saveComment" modelAttribute="comment" method="post"
-			enctype="multipart/form-data">
-			<form:hidden path="idComment" />
-            <form action="#" class="p-5 bg-white">
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="font-weight-bold" for="fullname">Autor</label>
-                  <input type="text" id="fullname" name="autor" class="form-control" placeholder="Autor">
-                </div>
-              </div>
-              
-              <div class="row form-group">
+<div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Opis</label>
-                  <input type="text" id="email" name="opis" class="form-control" placeholder="Opis">
+                  <a href="${pageContext.request.contextPath}/posts/${post.postid}/newComment"><input type="submit" value="Dodaj komentarz do postu" class="btn btn-primary pill text-white px-5 py-2">
                 </div>
               </div>
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Save" class="btn btn-primary pill text-white px-5 py-2">
-                </div>
+              </c:forEach>
               </div>
-              </form>
-            </form:form>
-          </div>
-        </div>
-      </div>
-    </div>
     
     
     

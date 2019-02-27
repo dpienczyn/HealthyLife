@@ -90,7 +90,7 @@ public class PostController {
 	@RequestMapping(value = "/savePost", method = RequestMethod.POST)
 	public ModelAndView savePost(@ModelAttribute("post") Post post) {
 	    postService.saveOrUpdate(post);
-	    return new ModelAndView("redirect:/");
+	    return new ModelAndView("redirect:/posts");
 	}
 	@RequestMapping(value = "/deletePost/{postid}")
 	public ModelAndView deletePost(@PathVariable("postid") int postid) {
