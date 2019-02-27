@@ -153,7 +153,7 @@
 					<td>${product.opis}</td>
 					<td>${product.cal}</td>
 					<td>${product.category.nazwa }</td>
-					<td><a href="<c:url value='/product/editProduct/${product.productId}' />" ><input type="submit" value="Edytuj" class="btn btn-primary pill text-white px-5 py-2"></td>
+					<%-- <td><a href="<c:url value='/product/editProduct/${product.productId}' />" ><input type="submit" value="Edytuj" class="btn btn-primary pill text-white px-5 py-2"></td> --%>
 					<td><a href="<c:url value='/product/deleteProduct/${product.productId}' />" ><input type="submit" value="Usuń" class="btn btn-primary pill text-white px-5 py-2"></td>
 				</tr>
 			</c:forEach>
