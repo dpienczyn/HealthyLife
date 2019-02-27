@@ -56,7 +56,7 @@ public class CommentController {
 		post.addComment(comment);
         model.put("comment", new Comment());
        /*model.put("lista", lista);*/
-        return new ModelAndView("view", model);
+        return new ModelAndView("newComment", model);
 
     }
 	

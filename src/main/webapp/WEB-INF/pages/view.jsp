@@ -35,7 +35,7 @@
   </head>
   <body>
   
-   <div class="site-wrap">
+  <div class="site-wrap">
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -54,7 +54,7 @@
           <div class="py-1">
             <div class="row align-items-center">
               <div class="col-2">
-                <h2 class="mb-0 site-logo"><a href="index.html">Healthy Life</a></h2>
+                <h2 class="mb-0 site-logo"><a href="http://healthylifee.herokuapp.com/posts">Healthy Life</a></h2>
               </div>
               <div class="col-10">
                 <nav class="site-navigation text-right" role="navigation">
@@ -62,10 +62,10 @@
                     
                     <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
-                      <li class="">
-                        <a href="http://healthylifee.herokuapp.com/">Home</a>
+                      <li class="active">
+                        <a href="http://healthylifee.herokuapp.com/posts">Home</a>
                       </li>
-                     <li class="has-children">
+                      <li class="has-children">
                         <a href="classes.html">Kalkulator</a>
                         <ul class="dropdown arrow-top">
                           <li><a href="http://healthylifee.herokuapp.com/bmi">BMI</a></li>
@@ -78,17 +78,16 @@
                               
                             </ul>
                           </li>
-
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a href="http://healthylifee.herokuapp.com/">Blog</a>
-                        <ul class="dropdown arrow-top">
-                          <li><a href="http://healthylifee.herokuapp.com/newPost">Nowy Post</a></li>
-						</ul>
-                      </li>
-                       <li class="active"><a href="http://healthylifee.herokuapp.com/logout">Wyloguj</a></li>
-                      <li class="active"><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
+                            <a href="http://healthylifee.herokuapp.com/posts">Blog</a>
+                            <ul class="dropdown">
+                              <li><a href="http://healthylifee.herokuapp.com/posts/newPost">Nowy Artykuł</a></li>  
+                            </ul>
+                          </li>
+                      <li><a href="http://healthylifee.herokuapp.com/logout">Wyloguj</a></li>
+                      <li><a href="http://healthylifee.herokuapp.com/kontakt">Kontakt</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -98,7 +97,6 @@
         </div>
       </div>
     </div>
-    
     
     <div class="slide-one-item home-slider owl-carousel">
       
@@ -125,63 +123,38 @@
         </div>
       </div> 
     </div>
+
 <c:forEach var="post" items="${lista}">
     <div class="site-block-half d-flex">
-      <div class="image bg-image" style="background-image"><img src="resources/images/1.jpg" alt="Image" class="responsive">
+      <div class="image bg-image" style="background-image:"><img src="resources/images/1.jpg" alt="Image" class="responsive"></div>
       <div class="text">
-        <h2 class="font-family-serif">${post.tytul} </h2>
-        <span class="caption d-block text-primary pl-0 mb-4">${post.autor }</span>
-        <p class="mb-5"> ${post.opis} </p>
-        <p><a href="<c:url value='/posts/deletePost/${post.postid}' />" class="text-primary">Usuń Artykuł <span class="icon-arrow-right small"></span></a></p>
+        <h2 class="font-family-serif">${post.tytul}</h2>
+        <span class="caption d-block text-primary pl-0 mb-4">${post.autor}</span>
+        <p class="mb-5">${post.opis}</p>
+        <p><a href="${pageContext.request.contextPath}/posts/${post.postid}/newComment" class="btn btn-primary pill px-4 py-3 text-white">Dodaj komentarz do postu</a></p>
+        <p><a href="<c:url value='/posts/deletePost/${post.postid}' />" class="btn btn-primary pill px-4 py-3 text-white">Usuń Artykuł <span class="icon-arrow-right small"></span></a></p>
+      </div>
       </div>
     </div>
-   </div>
-</c:forEach>
+    </c:forEach>
+    
 
-
-<div class="site-section site-section-sm">
-<c:forEach var="post" items="${lista}">
+    <div class="site-section bg-light">
       <div class="container">
-<div class="row form-group">
-                <div class="col-md-12">
-                  <a href="${pageContext.request.contextPath}/posts/${post.postid}/newComment"><input type="submit" value="Dodaj komentarz do postu" class="btn btn-primary pill text-white px-5 py-2">
-                </div>
-              </div>
-              </c:forEach>
-              </div>
-    
-    
-    
-<div class="site-section block-14 bg-light">
-
-      <div class="container">
-        
         <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2>Komentarze</h2>
+            <h2 class="mb-5">Komentarze</h2>
           </div>
         </div>
-<c:forEach var="comment" items="${comments}">
-
-		<div class="container">
-			<div class="col-md-12">
+        <c:forEach var="comment" items="${comments}">
+        <div class="col-md-12">
 				<h1>${comment.autor }</h1>
-
-
-				<div>
 					<span class="badge">${comment.opis }</span>
 				</div>
 				<hr>
-			</div>
-		</div>
-	</c:forEach>
-	
+        </c:forEach>
       </div>
-      
     </div>
-    
-
-
     
     
 
@@ -217,13 +190,13 @@
     </div> -->
 
     
-        <footer class="site-footer">
+    <footer class="site-footer">
       <div class="container">
         
 
         <div class="row">
           <div class="col-md-4">
-            <h3 class="footer-heading mb-4 text-white">About</h3>
+             <h3 class="footer-heading mb-4 text-white">About</h3>
             <p>Jakie są zasady zdrowego odżywiania według nowoczesnej dietetyki? Odżywiaj się regularnie, wybieraj produkty jak najmniej przetworzone, jedz jak najwięcej warzyw, a owoce w dwóch porcjach dziennie, ogranicz spożycie węglowodanów - to najważniejsze zalecenia dietetyków dotyczące zdrowego żywienia.</p>
             <p><a href="https://www.poradnikzdrowie.pl/diety-i-zywienie/zdrowe-odzywianie/zdrowe-odzywianie-10-najwazniejszych-zasad-aa-BxiR-4hyV-P2Ek.html" class="btn btn-primary pill text-white px-4">Read More</a></p>
           </div>
@@ -271,7 +244,7 @@
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Dominika Pienczyn</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -280,6 +253,9 @@
       </div>
     </footer>
   </div>
+
+  
+   
 	
   <script src="/resources/js/jquery-3.3.1.min.js"></script>
   <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
