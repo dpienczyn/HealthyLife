@@ -126,7 +126,7 @@
 
 <c:forEach var="post" items="${lista}">
     <div class="site-block-half d-flex">
-      <div class="image bg-image"><img src="${pageContext.request.contextPath}/resources/images/1.jpg" alt="Image" class="responsive"></div>
+      <div class="image bg-image"><img src="${pageContext.request.contextPath}/resources/images/11.jpg" alt="Image" class="responsive"></div>
       <div class="text">
         <h2 class="font-family-serif">${post.tytul}</h2>
         <span class="caption d-block text-primary pl-0 mb-4">${post.autor}</span>
