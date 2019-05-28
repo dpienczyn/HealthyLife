@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 # Aplikacja w której znajduje się:
-* panel rejestracji, logowania, wylogowywania
+* Panel rejestracji, logowania, wylogowywania
 * Kalkulatory: 
   * BMR - kalkulator zapotrzebowania kalorycznego,
   * BMI - kalkulator który oblicza wskaźnik masy ciała,
