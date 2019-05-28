@@ -1,6 +1,7 @@
-# HealthyLife
+                                                              Healthy Life
+-------------------------------------------------------------------------------------------------------------------------------------------
 
-Aplikacja w której znajduje się:
+# Aplikacja w której znajduje się:
 * panel rejestracji, logowania, wylogowywania
 * Kalkulatory: 
   * BMR - kalkulator zapotrzebowania kalorycznego,
