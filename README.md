@@ -8,6 +8,6 @@ Aplikacja w której znajduje się:
   * KALORIE - kalkulator kalorii i wartości odżywczych,
 * Baza Kalorii
 * Baza produktów
-* Blog o temacie "Zdrowy Styl Życia"
+* Blog - temat, prowadzenie zdrowego stylu życia
 * Możliwość komentowania artykułów
   
